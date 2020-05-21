@@ -15,12 +15,12 @@ To use `ClassPlugin` in a `module`, add the plugin to your `buildscript`:
     buildscript {
         repositories {
             maven {
-               url "https://dl.bintray.com/dinuscxj/maven"
+               url "https://dl.bintray.com/wuwen/maven"
             }
         }
     
         dependencies {
-            classpath 'com.dinuscxj:classreplace:1.0.3'
+            classpath 'com.wuwen.gradleplugin:classreplace:1.0.0'
         }
     }
 ```
@@ -28,7 +28,7 @@ To use `ClassPlugin` in a `module`, add the plugin to your `buildscript`:
 And then apply it in your `module`:
 
 ``` gradle 
-    apply plugin: 'com.dinuscxj.classreplace'
+    apply plugin: 'com.wuwen.classreplace'
 ``` 
 
 Last config the `classreplace` Extension
