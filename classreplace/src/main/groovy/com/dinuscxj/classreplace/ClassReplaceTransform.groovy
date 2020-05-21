@@ -69,7 +69,21 @@ public class ClassReplaceTransform extends Transform {
                         Format.DIRECTORY)
 
                 FileUtils.copyDirectory(directoryInput.file, dest)
-                printf PRINT_FORMAT, "copy directory " + directoryInput.file.path + " success";
+                printf PRINT_FORMAT, "copy directory 1 " + dest.path + " success"
+                printf PRINT_FORMAT, "copy directory 2 " + directoryInput.file.path + " success"
+
+                for (ClassReplaceItem classReplaceItem in classReplaceItems) {
+                    def targetFile = new File(dest, classReplaceItem.target)
+                    if(targetFile.exists()) {
+                        printf PRINT_FORMAT, "find class ${targetFile}"
+                        def sourceFile = new File(mProject.projectDir, classReplaceItem.source)
+                        if(sourceFile.exists()) {
+                            printf PRINT_FORMAT, "target class ${sourceFile}"
+                            FileUtils.copyFile(sourceFile, targetFile)
+                            printf PRINT_FORMAT, "replace class ${sourceFile}"
+                        }
+                    }
+                }
             }
 
             input.jarInputs.each { JarInput jarInput ->
