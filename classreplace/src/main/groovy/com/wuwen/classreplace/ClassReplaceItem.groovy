@@ -1,4 +1,4 @@
-package com.dinuscxj.classreplace;
+package com.wuwen.classreplace;
 
 public class ClassReplaceItem {
     public static final String SPLITTER = ":"

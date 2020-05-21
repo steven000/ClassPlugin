@@ -1,4 +1,4 @@
-package com.dinuscxj.classreplace
+package com.wuwen.classreplace
 
 import com.android.build.gradle.AppExtension
 import org.gradle.api.Plugin

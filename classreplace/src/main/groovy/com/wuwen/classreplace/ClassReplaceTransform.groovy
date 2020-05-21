@@ -1,4 +1,4 @@
-package com.dinuscxj.classreplace
+package com.wuwen.classreplace
 
 import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager

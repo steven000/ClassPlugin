@@ -1,4 +1,4 @@
-package com.dinuscxj.classreplace;
+package com.wuwen.classreplace;
 
 public class ClassReplaceExtension {
     File[] configFiles = null
