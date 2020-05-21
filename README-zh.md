@@ -1,10 +1,10 @@
 ## ClassPlugin: 灵活的Class替换插件               
 
-[English](https://github.com/dinuscxj/ClassPlugin) | 中文版 <br/>
+[English](https://github.com/steven000/ClassPlugin) | 中文版 <br/>
 
-![](https://raw.githubusercontent.com/dinuscxj/ClassPlugin/master/logo/class_replace_logo.jpeg?width=300)<br/>
+![](https://raw.githubusercontent.com/steven000/ClassPlugin/master/logo/class_replace_logo.jpeg?width=300)<br/>
 
-[ClassPlugin](https://github.com/dinuscxj/ClassPlugin) 是一个灵活的class替换插件, 
+[ClassPlugin](https://github.com/steven000/ClassPlugin) 是一个灵活的class替换插件, 
 `ClassPlugin` 可以用来替换包含在libs目录的jar和gradle依赖引入的jar中的class文件。
 如果你遇到一些第三方jar的class有一些bug, `ClassPlugin` 或许是最好解决的方式。
 
@@ -15,12 +15,12 @@
     buildscript {
         repositories {
             maven {
-               url "https://dl.bintray.com/dinuscxj/maven"
+               url "https://dl.bintray.com/wuwen/maven"
             }
         }
     
         dependencies {
-            classpath 'com.dinuscxj:classreplace:1.0.3'
+            classpath 'com.wuwen.gradleplugin:classreplace:1.0.0'
         }
     }
 ```
@@ -28,7 +28,7 @@
 然后应用到你的`module`中
 
 ``` gradle 
-    apply plugin: 'com.dinuscxj.classreplace'
+    apply plugin: 'com.wuwen.classreplace'
 ``` 
 
 最后配置`classreplace` 
@@ -58,10 +58,7 @@
 * 构建新建类所在`module`（构建完不要忘了删除此类）
 * 在build/intermediates/classes/{包名}/{类名}查找所生成的类
 
-## Misc
 
-  ***QQ群:*** **342748245**
-  
 ## License
 
     Copyright 2015-2019 dinus
