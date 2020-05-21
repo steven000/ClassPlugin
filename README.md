@@ -1,10 +1,10 @@
 ## ClassPlugin: Flexible Class Replacement Plugin               
 
-English | [中文版](https://github.com/dinuscxj/ClassPlugin/blob/master/README-zh.md)<br/>
+English | [中文版](https://github.com/steven000/ClassPlugin/blob/master/README-zh.md)<br/>
 
-![](https://raw.githubusercontent.com/dinuscxj/ClassPlugin/master/logo/class_replace_logo.jpeg?width=300)<br/>
+![](https://raw.githubusercontent.com/steven000/ClassPlugin/master/logo/class_replace_logo.jpeg?width=300)<br/>
 
-[ClassPlugin](https://github.com/dinuscxj/ClassPlugin) is a flexible class replacement plugin for gradle, 
+[ClassPlugin](https://github.com/steven000/ClassPlugin) is a flexible class replacement plugin for gradle, 
 the `ClassPlugin` can be used to replace the class of the jar which contained in both the libs and the gradle dependency.
 if you encounter some bugs on the third-party jars, the `ClassPlugin` will be the best way to solve it.
 
