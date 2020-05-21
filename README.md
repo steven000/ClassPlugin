@@ -58,9 +58,6 @@ The format of the config file
 * Build the `module` or the `project`  
 * Find the generated class on the path: build/intermediates/classes/{package name}/{class name}
 
-## Misc
-
-  ***QQ Group:*** **342748245**
   
 ## License
 
