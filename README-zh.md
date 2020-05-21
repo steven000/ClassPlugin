@@ -15,12 +15,12 @@
     buildscript {
         repositories {
             maven {
-               url "https://dl.bintray.com/dinuscxj/maven"
+               url "https://dl.bintray.com/wuwen/maven"
             }
         }
     
         dependencies {
-            classpath 'com.dinuscxj:classreplace:1.0.3'
+            classpath 'com.wuwen.gradleplugin:classreplace:1.0.0'
         }
     }
 ```
@@ -28,7 +28,7 @@
 然后应用到你的`module`中
 
 ``` gradle 
-    apply plugin: 'com.dinuscxj.classreplace'
+    apply plugin: 'com.wuwen.classreplace'
 ``` 
 
 最后配置`classreplace` 
@@ -58,9 +58,6 @@
 * 构建新建类所在`module`（构建完不要忘了删除此类）
 * 在build/intermediates/classes/{包名}/{类名}查找所生成的类
 
-## Misc
-
-  ***QQ群:*** **342748245**
   
 ## License
 
