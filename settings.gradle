@@ -1,3 +1,2 @@
 include ':app'
-//include 'classreplace'
-include 'jacoco_android'
+include 'classreplace'
